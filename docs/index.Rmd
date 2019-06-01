@@ -1,0 +1,197 @@
+---
+title: "Land Use Model Applications for Regional Planning and Transportation Planning in the U.S."
+subtitle: "YNU Seminar"
+author: "Liming Wang"
+date: June 7th, 2019 #'`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      
+---
+
+```{r setup, include=FALSE}
+#knitr::opts_knit$set(root.dir = "../")
+knitr::opts_chunk$set(message=FALSE, warning=F, echo=F, fig.align="center")
+options(width = 2000)
+options(repos="https://cran.rstudio.com")
+```
+
+# About me
+
+- Faculty member of Urban Studies and Planning at Portland State University
+- Did dissertation research on urban simulation models
+- Involved in the development and applications of a popular land use model: UrbanSim
+- Research interest on land use - transportation interaction (LUTI) models
+
+---
+
+# Visioning vs Land Use Models
+
+.pull-left[
+- **Visioning** is a community oriented planning technique used to identify regional land-use and transportation goals
+- **Objectives**: Consensus-building of the region's future
+- **Tools**: Sketch planning tools (Envision Tomorrow+, CommunityViz, ...), paper/tablet maps, lego bricks
+- Primarily driving by user-controlled inputs
+- Limited by the quality of the public involvement and consensus-building, the feasibility of the preferred scenario
+]
+
+.pull-right[
+![Visioning](resources/james_rojas_event.jpg)
+Credit: [City of Milwaukie, OR](https://www.milwaukieoregon.gov/planning/visioning-place-it) 
+]
+
+---
+
+# Visioning vs Land Use Models
+
+.pull-left[
+- **Land-Use Models** predict a region’s future spatial distribution of households and employment 
+- **Objectives**: anticipating direct and indirect impacts of policies/planns/public investment
+- **Tools**: UrbanSim, DRAM/EPAL, MetroScope, CubeLand, ...
+- Primarily driving by base year conditions, scenario inputs, and model assumptions
+- Limited by the quality of inputs and model assumptions
+]
+
+.pull-right[
+![UrbanSim](resources/UrbanSim-Choice-Process.png)
+Source: [Waddell, 2005](https://www.researchgate.net/publication/228740459_Confronting_the_bane_of_endogeneity_in_modelling_urban_social_dynamics)
+]
+
+---
+
+background-image: url("resources/Waddell2011.jpeg")
+background-size: 75%
+class: center, bottom
+
+Computer Models in Plan and Policy-making Process (Source: [Waddell, 2011](http://www.tandfonline.com/doi/abs/10.1080/01441647.2010.525671))
+
+---
+
+background-image: url("resources/LUM_evolution.png")
+background-size: 100%
+class: center, bottom
+
+Evolution of Land Use Models
+
+---
+
+background-image: url("resources/LUTM_trends.png")
+background-size: 80%
+class: center, bottom
+
+Evolution of Land Use Models (Source: [Hunt et al, 2005](http://www.tandfonline.com/doi/abs/10.1080/0144164052000336470))
+
+---
+
+background-image: url("resources/fampo_respondents.png")
+background-size: 100%
+
+---
+
+background-image: url("resources/fampo_lu.png")
+background-size: 100%
+class: center, bottom
+
+Status of Land Use Model Applications
+
+---
+
+background-image: url("resources/psrc_integrated_process2.png")
+background-size: 100%
+class: center, bottom
+
+Connect Visioning and Land Use Modeling (Puget Sound Regional Council)
+
+---
+
+# Metro's Objectives of Applying Land Use Models
+
+> Metro is responsible for **growth planning under Oregon law** and **transportation planning under federal law** for three urban counties in the Portland region.  Analytic support for those two processes requires forecasts of how much growth is likely to occur within the region’s Urban Growth Boundary (UGB) and where such growth is likely to occur at smaller-scale geographies.  The small-geography growth forecasts support transportation planning as inputs to transportation system performance forecasting. 
+
+---
+
+background-image: url("resources/MetroScope_components.png")
+background-size: 100%
+class: center, bottom
+
+MetroScope Model Structure
+
+---
+
+background-image: url("resources/metro_pop2035.png")
+background-size: 90%
+class: center, bottom
+
+Population trend and forecasts
+
+---
+
+background-image: url("resources/metro_emp2035.png")
+background-size: 90%
+class: center, bottom
+
+Employment trend and forecasts
+
+---
+
+# Buildable Land Inventory
+
+- [2015 Urban Growth Report](http://www.oregonmetro.gov/urban-growth-report) page 17-18
+- [2015 Urban Growth Report Appendix 2 Buildable Land Inventory Methods](http://www.oregonmetro.gov/sites/default/files/2014UGR-Appendix-2-BLI-methods-Final.pdf)
+- [2015 Urban Growth Report Appendix 3 Buildable land inventory results](http://www.oregonmetro.gov/sites/default/files/2014UGR-Appendix-2-BLI-methods-Final.pdf)
+
+---
+
+background-image: url("resources/MetroScope_modules.png")
+background-size: 90%
+class: center, bottom
+
+Residential modules of MetroScope
+
+---
+
+background-image: url("resources/MetroScope_geographies.png")
+background-size: 80%
+class: center, bottom
+
+MetroScope Geographies
+
+---
+
+# MetroScope Population and Employment Forecasts
+
+[Appendix 1a: Population and employment forecast for the Portland-Vancouver-Hillsboro
+metropolitan statistical area](http://www.oregonmetro.gov/sites/default/files/2014UGR-Appendix-1a-forecast-Final.pdf)
+
+---
+
+background-image: url("resources/CRC_VMT.png")
+background-size: 72%
+class: center, bottom
+
+Columbia River Crossing Study with MetroScope (Source: [Sonny Conder, et al, 2010](http://www.oregonmetro.gov/sites/default/files/10272010_CRC_economic_impacts_tolling.pdf))
+
+---
+
+background-image: url("resources/CRC_density.png")
+background-size: 72%
+class: center, bottom
+
+Columbia River Crossing Study with MetroScope (Source: [Sonny Conder, et al, 2010](http://www.oregonmetro.gov/sites/default/files/10272010_CRC_economic_impacts_tolling.pdf))
+
+---
+
+# How good/bad are the forecasts
+
+- [A post-mortem analysis of the Land-Use-Transportation-Air-Quality (LUTRAQ) forecasts](https://sapporo.usp.pdx.edu/rstudio/files/LUTRAQ/docs/ACSP_LUTRAQ_slides.html)
+
+---
+
+# Trends in Land Use Models
+
+- Big data
+- Machine learning
