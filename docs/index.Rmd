@@ -1,8 +1,8 @@
 ---
-title: "Land Use Model Applications for Regional Planning and Transportation Planning in the U.S."
+title: "Land Use Modeling Applications for Land Use and Transportation Planning in the U.S."
 subtitle: "YNU Seminar"
-author: "Liming Wang"
-date: June 7th, 2019 #'`r format(Sys.Date(), "%B %d, %Y")`'
+author: "Liming Wang \n Portland State University"
+date: "June 7th, 2019" #'`r format(Sys.Date(), "%B %d, %Y")`'
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -19,13 +19,6 @@ knitr::opts_chunk$set(message=FALSE, warning=F, echo=F, fig.align="center")
 options(width = 2000)
 options(repos="https://cran.rstudio.com")
 ```
-
-# About me
-
-- Faculty member of Urban Studies and Planning at Portland State University
-- Did dissertation research on urban simulation models
-- Involved in the development and applications of a popular land use model: UrbanSim
-- Research interest on land use - transportation interaction (LUTI) models
 
 ---
 
@@ -84,11 +77,6 @@ background-size: 80%
 class: center, bottom
 
 Evolution of Land Use Models (Source: [Hunt et al, 2005](http://www.tandfonline.com/doi/abs/10.1080/0144164052000336470))
-
----
-
-background-image: url("resources/fampo_respondents.png")
-background-size: 100%
 
 ---
 
@@ -187,11 +175,19 @@ Columbia River Crossing Study with MetroScope (Source: [Sonny Conder, et al, 201
 
 # How good/bad are the forecasts
 
+Households & Housing Predictions (LUTRAQ) vs Observation (CENSUS/ACS)
+
+```{r, out.height = "400px"}
+knitr::include_graphics("resources/hh-housing.png")
+```
+
 - [A post-mortem analysis of the Land-Use-Transportation-Air-Quality (LUTRAQ) forecasts](https://sapporo.usp.pdx.edu/rstudio/files/LUTRAQ/docs/ACSP_LUTRAQ_slides.html)
 
 ---
 
 # Trends in Land Use Models
 
-- Big data
-- Machine learning
+- Big data: diverse data sources available for model estimation and prediction
+- Machine learning: powerful non-statistical algorithms for more accurate predictions
+- Making sense of and communicate large volume of modeling outputs
+- Uncertainty in model inputs and outputs
