@@ -1,7 +1,8 @@
 ---
 title: "Land Use Modeling Applications for Land Use and Transportation Planning in the U.S."
 subtitle: "YNU Seminar"
-author: "Liming Wang \n Portland State University"
+author: "Liming Wang"
+institute: "Portland State University"
 date: "June 7th, 2019" #'`r format(Sys.Date(), "%B %d, %Y")`'
 output:
   xaringan::moon_reader:
@@ -20,15 +21,23 @@ options(width = 2000)
 options(repos="https://cran.rstudio.com")
 ```
 
+# Projecting the Future for Planning
+
+By definition, planning projects the future. Because researchers & planners don't have a crystal ball to help them, there are a few second-best options in urban and transportation planning:
+
+- Widsom of the crowd - Visioning
+- Widsom of experts - Delphi methods
+- Widsom of data & computers - Modeling
+
 ---
 
 # Visioning vs Land Use Models
 
 .pull-left[
-- **Visioning** is a community oriented planning technique used to identify regional land-use and transportation goals
-- **Objectives**: Consensus-building of the region's future
+- **Visioning** is a community-oriented planning technique used to identify regional land-use and transportation goals
+- **Objectives**: Consensus-building of the region's future;
 - **Tools**: Sketch planning tools (Envision Tomorrow+, CommunityViz, ...), paper/tablet maps, lego bricks
-- Primarily driving by user-controlled inputs
+- Primarily driven by user-controlled inputs;
 - Limited by the quality of the public involvement and consensus-building, the feasibility of the preferred scenario
 ]
 
@@ -45,8 +54,8 @@ Credit: [City of Milwaukie, OR](https://www.milwaukieoregon.gov/planning/visioni
 - **Land-Use Models** predict a region’s future spatial distribution of households and employment 
 - **Objectives**: anticipating direct and indirect impacts of policies/planns/public investment
 - **Tools**: UrbanSim, DRAM/EPAL, MetroScope, CubeLand, ...
-- Primarily driving by base year conditions, scenario inputs, and model assumptions
-- Limited by the quality of inputs and model assumptions
+- Primarily driven by base year conditions, available data, scenario inputs, and model assumptions
+- Limited by the quality of data inputs and model assumptions
 ]
 
 .pull-right[
@@ -76,7 +85,7 @@ background-image: url("resources/LUTM_trends.png")
 background-size: 80%
 class: center, bottom
 
-Evolution of Land Use Models (Source: [Hunt et al, 2005](http://www.tandfonline.com/doi/abs/10.1080/0144164052000336470))
+Evolution of Land Use and Transportation Models (Source: [Hunt et al, 2005](http://www.tandfonline.com/doi/abs/10.1080/0144164052000336470))
 
 ---
 
@@ -85,6 +94,22 @@ background-size: 100%
 class: center, bottom
 
 Status of Land Use Model Applications
+
+---
+
+background-image: url("resources/mag-lu.png")
+background-size: 100%
+class: center, bottom
+
+Status of Land Use Model Applications
+
+---
+
+background-image: url("resources/fampo-tdm.png")
+background-size: 100%
+class: center, bottom
+
+Status of Travel Demand Model Applications
 
 ---
 
@@ -126,14 +151,6 @@ Employment trend and forecasts
 
 ---
 
-# Buildable Land Inventory
-
-- [2015 Urban Growth Report](http://www.oregonmetro.gov/urban-growth-report) page 17-18
-- [2015 Urban Growth Report Appendix 2 Buildable Land Inventory Methods](http://www.oregonmetro.gov/sites/default/files/2014UGR-Appendix-2-BLI-methods-Final.pdf)
-- [2015 Urban Growth Report Appendix 3 Buildable land inventory results](http://www.oregonmetro.gov/sites/default/files/2014UGR-Appendix-2-BLI-methods-Final.pdf)
-
----
-
 background-image: url("resources/MetroScope_modules.png")
 background-size: 90%
 class: center, bottom
@@ -150,10 +167,27 @@ MetroScope Geographies
 
 ---
 
-# MetroScope Population and Employment Forecasts
+# Metro's 2040 Growth Concept
 
-[Appendix 1a: Population and employment forecast for the Portland-Vancouver-Hillsboro
-metropolitan statistical area](http://www.oregonmetro.gov/sites/default/files/2014UGR-Appendix-1a-forecast-Final.pdf)
+```{r, out.height = "400px"}
+knitr::include_graphics("resources/2040GrowthConcept1.png")
+```
+
+---
+
+# Metro's 2040 Growth Concept
+
+```{r, out.height = "400px"}
+knitr::include_graphics("resources/2040GrowthConcept2.png")
+```
+
+---
+
+# Application: Columbia River Crossing
+
+```{r, out.height = "500px", out.width="800px"}
+knitr::include_graphics("resources/CRC.png")
+```
 
 ---
 
@@ -185,7 +219,7 @@ knitr::include_graphics("resources/hh-housing.png")
 
 ---
 
-# Trends in Land Use Models
+# Opportunities in Land Use Modeling
 
 - Big data: diverse data sources available for model estimation and prediction
 - Machine learning: powerful non-statistical algorithms for more accurate predictions
